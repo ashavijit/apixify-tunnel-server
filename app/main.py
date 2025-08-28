@@ -9,9 +9,9 @@ app.include_router(router)
 
 ##################### Home Route ################
 
-@app.get("/")
-async def home():
-    return {"message": "Welcome to the APIX Bridge"}
+# @app.get("/")
+# async def home():
+#     return {"message": "Welcome to the APIX Bridge"}
 
 @app.websocket("/ws")
 async def websocket_endpoint(ws: WebSocket):
